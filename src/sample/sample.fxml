@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller" alignment="CENTER">
+
+    <Text
+            GridPane.halignment="CENTER"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="0"
+            fill="blue"
+            textAlignment="CENTER"
+            text="CHAT"
+
+    />
+    <AnchorPane GridPane.columnIndex="1"
+    GridPane.rowIndex="1">
+        <TextArea AnchorPane.topAnchor="40.0"
+                  AnchorPane.leftAnchor="10.0"
+                  AnchorPane.rightAnchor="10.0"
+                  AnchorPane.bottomAnchor="40.0"
+                  editable="false">
+        </TextArea>
+
+        <HBox
+        AnchorPane.leftAnchor="10.0"
+        AnchorPane.bottomAnchor="10.0"
+        >
+            <TextField
+            fx:id="idTextField"
+            promptText="Type yor message here..."
+            />
+            <Button
+            fx:id="idBtnSend"
+            text="send"
+            textFill="green"/>
+        </HBox>
+
+    </AnchorPane>
+
+</GridPane>
+
