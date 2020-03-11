@@ -20,11 +20,13 @@
     />
     <AnchorPane GridPane.columnIndex="1"
     GridPane.rowIndex="1">
-        <TextArea AnchorPane.topAnchor="40.0"
-                  AnchorPane.leftAnchor="10.0"
-                  AnchorPane.rightAnchor="10.0"
-                  AnchorPane.bottomAnchor="40.0"
-                  editable="false">
+        <TextArea
+                fx:id="idMainTextArea"
+                AnchorPane.topAnchor="40.0"
+                AnchorPane.leftAnchor="10.0"
+                AnchorPane.rightAnchor="10.0"
+                AnchorPane.bottomAnchor="40.0"
+                editable="false">
         </TextArea>
 
         <HBox
@@ -34,11 +36,11 @@
             <TextField
             fx:id="idTextField"
             promptText="Type yor message here..."
+            onAction="#onEnter"
             />
             <Button
-            fx:id="idBtnSend"
             text="send"
-            textFill="green"/>
+            onAction="#btnSend"/>
         </HBox>
 
     </AnchorPane>
